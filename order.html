@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Emmanuel Akinsiku">
+    <meta name="description" content=" Daisy cakes Order.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Place Order</title>
+    <link rel="icon" href="img/cake10.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="img/cake9.jpg" alt="Daisy-cakes">
+        </figure>
+        <h2>Place Your Order</h2>
+        <nav>
+            <ul>
+                <li> <a href="/">Home</a> </li>
+                <li> 
+                    <a href="/#about">About <abbr title="Daisy Cakes and Snacks.">DCS.</abbr></a>
+                </li>
+                <li> <a href="#order">Place Order.</a> </li>
+                <li> <a href="contact.html">Contact Us</a> </li>
+            </ul>
+        </nav>
+        <figure>
+            <img src="img/cake1.jpg" alt="" title="Daisy Cakes" height="350" width="400">
+            <figcaption> <i>Beautiful Birthday Cake and Cup Cakes</i> </figcaption>
+        </figure>
+
+    </header>
+    <hr>
+    <article id="order">
+        <form action="https://httpbin.org/get" method="get">
+            
+            <h2>Place Your Order</h2>
+            <fieldset>
+                <legend>Cake</legend>
+                <p>
+                    <input type="text" name="Cake" id="Cake" list="Cake-list" placeholder="Select one">
+                    <datalist id="Cake-list">
+                        <option value="Red velvet">
+                        <option value="Chocolate">
+                        <option value="Vanilla">
+                        <option value="Other">
+                    </datalist>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pie</legend>
+                <p>
+                    <input type="radio" name="food" id="meat-pie" value="meat-pie">
+                    <label for="meat-pie">Meat Pie</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="chicken-pie" value="chicken-pie">
+                        <label for="chicken-pie">Chicken Pie</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="other" value="other">
+                    <label for="other">Other</label>
+                </p>
+            </fieldset>
+            <br>
+                
+            <fieldset>
+                <legend>Roll</legend>
+                <p>
+                    <input type="checkbox" name="food" id="Egg-roll" value="Egg-roll">
+                    <label for="Egg-roll">Egg roll</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="food" id="sausage-roll" value="sausage-roll">
+                    <label for="sausage-roll">Sausage roll</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="food" id="otherfood" value="otherfood">
+                    <label for="otherfood">Other</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Other</legend>
+                <p>
+                    <label for="snacks">Snacks:</label>
+                    <select name="snacks" id="snacks">
+                        <option value="chinchin">Chin-Chin</option>
+                        <option value="cookies">Cookies</option>
+                        <optgroup label="chips">
+                            <option value="plantain-chips">plantain Chips</option>
+                            <option value="Potato-chips">Potatoe Chips</option>
+                        </optgroup>
+                        <option value="others">Other</option>
+                    </select>
+                </p>
+
+                <br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+    </article>
+
+    <hr>
+
+    <footer>
+        <a href="#">Back to Top</a>
+
+        <hr>
+
+       Copyright &copy; Daisy Cakes and Snacks.
+       <a href="/">back home</a>
+
+    </footer>
+
+</body>
+</html>
